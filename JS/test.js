@@ -1,8 +1,10 @@
-var x = 1
-console.log(x);
 const readlineSync = require("readline-sync");
-var name = new String(readlineSync.question('your name: '));
-var firstname = new String(readlineSync.question('your firstname: '));
-var city = new String(readlineSync.question('your city: '));
+let nombre1 = new Number(readlineSync.question('choose a number with a decimal: '));
+console.log(nombre1);
 
-console.log('Your name is ' + name + ' ' + firstname + ' and you live in ' + city + ' !');
+let nombre2 = new Number(readlineSync.question('choose a second number with a decimal: '));
+console.log(nombre2);
+
+let solution = (Math.trunc(nombre1)) + nombre2;
+
+console.log('the solution is ' + solution + ' !');
