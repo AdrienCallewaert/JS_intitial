@@ -1,12 +1,6 @@
 const readlineSync = require("readline-sync");
-let nombre1 = new Number(readlineSync.question('your shoe size : '));
-console.log(nombre1);
+var name = new String(readlineSync.question('1/3. your name: '));
+var city = new String(readlineSync.question('2/3. your city: '));
+var job = new String(readlineSync.question('3/3. your job: '));
 
-let nombre2 = new Number(readlineSync.question('your birth year: '));
-console.log(nombre2);
-
-let solution1 = nombre1 * 2 + 5;
-let solution2 = solution1 * 50 - nombre2;
-let solution3 = solution2 + 1766;
-
-console.log('the solution is ' + solution3 + ' !');
+console.log('Your story is: ' + name + ' lives in ' + city + ' and you live in ' + job + ' !');
